@@ -1,4 +1,3 @@
-showPrimes(n);
 var n;
 do {
     n = parseFloat(prompt("Enter a positive integer:", "0"));
@@ -23,5 +22,6 @@ function isPrime(num) {
 }
 
 showPrimes(n);
+
 
 
