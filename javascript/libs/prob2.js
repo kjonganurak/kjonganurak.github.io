@@ -1,60 +1,3 @@
-// var n;
-// function callInput() {
-//     n = parseFloat(prompt("Enter an integer (a negative integer to quit):", "0"));
-//     return n;
-// }
-// // if (isNaN(n)) {
-// //     do {
-// //         callInput();
-// //     } while (isNaN(n));
-// // }
-// if (n < 0) {
-//     alert("For the list that is empty, the average is 0, the minimum is 0 and the maximum is 0");
-// }
-// else {
-//     const inputNumList = []
-//     do {
-//         callInput();
-//         if(n < 0 || isNaN(n)) {
-//             console.log("end command");  
-//         }
-//         else{
-//         inputNumList.push(n);
-
-//         }
-//     } while (!isNaN(n) && n >= 0 );
-//     alert(inputNumList);
-
-// }
-// var n;
-// const inputNumList = [];
-
-// function callInput() {
-//     n = parseFloat(prompt("Enter an integer (a negative integer to quit):", "0"));
-//     return n;
-// }
-// callInput();
-// if (n < 0) {
-//     alert("For the list that is empty, the average is 0, the minimum is 0, and the maximum is 0.");
-// } else {
-
-//     do {
-//         if (!isNaN(n) && n >= 0) {
-//             inputNumList.push(n);
-//         } else if (isNaN(n)) {
-//             console.log("Invalid input. Please enter a valid number.");
-//         }
-//         callInput();
-//     } while (n >= 0);
-
-
-//     if (inputNumList.length > 0) {
-//         alert("For the list " + inputNumList.join(", ") + "the average is " + ((inputNumList / inputNumList.length) * inputNumList.length )
-//         + " the minimum is " + inputNumList.min() + " the maximum is " + inputNumList.max());
-//     } else {
-//         alert("For the list that is empty, the average is 0, the minimum is 0, and the maximum is 0.");
-//     }
-// }
 var n;
 const inputNumList = [];
 
@@ -63,13 +6,13 @@ function callInput() {
     return n;
 }
 
-// Get the initial input
+
 callInput();
 
 if (n < 0) {
     alert("For the list that is empty, the average is 0, the minimum is 0, and the maximum is 0.");
 } else {
-    // Collect numbers
+
     do {
         if (!isNaN(n) && n >= 0) {
             inputNumList.push(n);
@@ -80,7 +23,7 @@ if (n < 0) {
     } while (n >= 0);
 
     if (inputNumList.length > 0) {
-        // Calculate statistics
+
         const sum = inputNumList.reduce((a, b) => a + b, 0);
         const average = sum / inputNumList.length;
         const min = Math.min(...inputNumList);
